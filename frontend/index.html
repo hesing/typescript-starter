@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Typescript Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-faded">
+        <a class="navbar-brand" href="#">Typescript Demo</a>
+    </nav>
+    <div class="container">
+        <h1>Typescript Starter</h1>
+        <p>Open the console</p>
+    </div>
+
+	<script src="../node_modules/systemjs/dist/system.src.js"></script>
+
+	<script>
+	System.config({
+		"packages": { "components/": {defaultExtension: "js" }}
+	});
+
+	System.import("components/demo/test"); // loads /demo/test.js
+    </script>
+</body>
+</html>
